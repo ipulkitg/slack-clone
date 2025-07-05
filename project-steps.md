@@ -1,7 +1,7 @@
 # Implementation Plan
 
 ## Database Setup
-- [ ] Step 1: Create database schema for channels and messages
+- [x] Step 1: Create database schema for channels and messages
   - **Task**: Design and implement Drizzle schema for channels and messages tables with proper relationships, then generate and run migrations
   - **Files**: 
     - `db/schema/index.ts`: Export all schemas
@@ -12,7 +12,7 @@
   - **User Instructions**: Run `npm run db:generate` then `npm run db:migrate` to apply schema changes to database
 
 ## UI Components Installation
-- [ ] Step 2: Install required shadcn/ui components
+- [x] Step 2: Install required shadcn/ui components
   - **Task**: Install all shadcn/ui components needed for the application interface
   - **Files**: 
     - `components/ui/button.tsx`: Button component

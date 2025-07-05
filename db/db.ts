@@ -1,6 +1,7 @@
 import { config } from "dotenv"
 import { drizzle as drizzlePostgres } from "drizzle-orm/postgres-js"
 import postgres from "postgres"
+import * as schema from "./schema"
 
 config({ path: ".env.local" })
 
@@ -9,7 +10,7 @@ if (!databaseUrl) {
   throw new Error("DATABASE_URL is not set")
 }
 
-const dbSchema = {}
+const dbSchema = schema
 
 function initializeDb(url: string) {
   const client = postgres(url, { prepare: false })
